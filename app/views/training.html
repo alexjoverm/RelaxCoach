@@ -1,0 +1,14 @@
+<div class="my-wrapper" ng-click="Tap()">
+
+  <div class="image-training-wrap">
+    <img ng-class="{'deflate': config.deflating }" class="image-training" src="images/balloon.png" alt=""/>
+    <img class="image-background" src="images/balloon_ext.png" alt=""/>
+  </div>
+
+  <h2  class="text-bottom">
+    <timer ng-if="config.training && !config.tappeable" interval="1000" countdown="120">{{mminutes}}:{{sseconds}}</timer>
+  </h2>
+
+  <h3 class="text-bottom" ng-show="!config.training && !config.tappeable">Tap to start</h3>
+
+</div>

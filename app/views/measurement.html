@@ -1,0 +1,11 @@
+<div class="my-wrapper" ng-click="GoTo('prefeedback')">
+  <h3 id="heartrate" ng-show="config.tappeable">{{ pulse1.value }}</h3>
+
+  <div class="my-knob">
+    <knob knob-data="value" knob-options="options"></knob>
+  </div>
+
+
+  <h4 ng-show="!config.tappeable" class="text-bottom">Measuring your heart-rate...</h4>
+  <h3 ng-show="config.tappeable" class="text-bottom">Tap to continue</h3>
+</div>

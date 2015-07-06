@@ -1,0 +1,37 @@
+<div class="my-wrapper" ng-click="GoTo('training')">
+
+  <h2 class="subtitle"> Your heart-rate </h2>
+
+  <wij-lineargauge value="pulse1.value" height="50" width="260" max="135" min="60">
+    <animation enabled="true" duration="1200" easing=">"></animation>
+    <face>
+      <style fill="#FFFFFF" stroke="none"></style>
+    </face>
+    <tick-major interval="15">
+      <style fill="#BBBBBB"></style>
+    </tick-major>
+    <labels>
+      <style fill="#777777" font-size="17" font-weight="500"></style>
+    </labels>
+    <pointer shape="rect" length="0.5">
+      <style fill="#555555" stroke="none" opacity="1"></style>
+    </pointer>
+    <ranges>
+      <range start-value="60" end-value="70" start-distance="1.0" end-distance="1.0" start-width="0.4" end-width="0.4">
+        <style fill="#70DB70" opacity="1" stroke="none"></style>
+      </range>
+      <range start-value="70" end-value="90" start-distance="1.0" end-distance="1.0" start-width="0.4" end-width="0.4">
+        <style fill="#FFAD5C" opacity="1" stroke="none"></style>
+      </range>
+      <range start-value="90" end-value="135" start-distance="1.0" end-distance="1.0" start-width="0.4" end-width="0.4">
+        <style fill="#FF5C5C" opacity="1" stroke="none"></style>
+      </range>
+    </ranges>
+  </wij-lineargauge>
+
+  <h3 class="text-bottom">Tap to continue</h3>
+
+</div>
+
+
+
