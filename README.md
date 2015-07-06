@@ -1,12 +1,20 @@
 # Relax-Coach
 
-This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
-version 0.11.1.
+Prototype made using AngularJS that shows breathing techniques and fakely measures your heart-rate (it should be entered by inputs).
 
-## Build & development
+## Instructions
 
-Run `grunt` for building and `grunt serve` for preview.
+Previously installed `node.js, npm, bower, grunt` you can run:
 
-## Testing
+```
+npm install
+bower install
+```
 
-Running `grunt test` will run the unit tests with karma.
+And then run:
+
+```
+grunt serve
+```
+
+And you'll see it on your browser
